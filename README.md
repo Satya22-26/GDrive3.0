@@ -10,5 +10,6 @@ GDrive 3.0 is a decentralized platform for uploading, storing, and sharing image
 - **Metamask Integration:** Users can interact with the Ethereum blockchain using Metamask, ensuring secure and seamless transactions.
 - **React Frontend:** The frontend is built using React, providing a modern and responsive user interface.
 
-##Contributing
+## Contributing
+
 We welcome contributions to GDrive 3.0! To contribute, please fork the repository, make your changes, and submit a pull request.
