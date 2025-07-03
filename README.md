@@ -1,12 +1,9 @@
 # 📁 GDrive 3.0 - Decentralized Image & File Upload and Sharing Platform
 
 GDrive 3.0 is a decentralized platform for uploading, storing, and sharing images and files. It leverages **IPFS** for decentralized and immutable storage, utilizes **Solidity** smart contracts on the Ethereum blockchain for access control and ownership management, and provides users with the ability to grant or revoke access to their uploaded content.
+![Screenshot 2025-07-03 152546](https://github.com/user-attachments/assets/8561840f-5c26-47d7-b128-b8b5b6f427ee)
 
-![Screenshot (60)](https://github.com/Satya22-26/GDrive3.0/assets/137152552/86ef7b69-1d3c-4020-b990-bc6d68c88da5)
-
-![Screenshot (61)](https://github.com/Satya22-26/GDrive3.0/assets/137152552/640bf1c6-c0bd-4734-b54e-7da8599884cb)
-
-![Screenshot (62)](https://github.com/Satya22-26/GDrive3.0/assets/137152552/3b754db4-7f2d-40fc-a5ca-8c5a1cd46e0b)
+![Screenshot 2025-07-03 155910](https://github.com/user-attachments/assets/ef987c56-582c-4e21-81ab-ea47b3a74aec)
 
 ## 🌟 Features
 
