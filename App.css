@@ -1,0 +1,103 @@
+:root {
+--bg-page:#0a0a0a;
+--bg-card:#1a1a1ad9;
+--border-light:#2e2e2e;
+--text-primary:#f0f0f0;
+--text-secondary:#aaa;
+--accent:#76c000;
+--accent-dark:#5fa000;
+--accent-alt:#a3d900;
+--shadow:#0009 0 4px 12px;
+--transition:.3s ease-out;
+--radius:12px;
+--gutter:24px;
+--gap:16px
+}
+
+html,body {
+ height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--text-primary);
+  background: linear-gradient(-45deg, var(--accent), var(--bg-card), var(--bg-card), var(--bg-page));
+  background-size: 600% 600%;
+  animation: gradientShift 10s ease infinite;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+@keyframes gradientShift {
+  0%   { background-position: 0%   50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0%   50%; }
+}
+
+body::before {
+content:"";
+position:fixed;
+inset:0;
+background:linear-gradient(#0f0f0f 2px,transparent 1px),linear-gradient(90deg,#0f0f0f 1px,transparent 1px),repeating-linear-gradient(45deg,#76c0000d 0px,#76c0000d 1px,transparent 1px,transparent 20px);
+background-size:50px 50px,50px 50px,100px 100px;
+z-index:-1;
+opacity:.4;
+animation:scrollPattern 30s linear infinite
+}
+
+@keyframes scrollPattern {
+0% {
+background-position:0 0,0 0,0 0
+}
+
+100% {
+background-position:500px 500px,500px 500px,500px 500px
+}
+}
+
+.App {
+text-align:center
+}
+
+.App-header {
+background-color:var(--bg-card);
+min-height:100vh;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+padding:var(--gutter);
+font-size:calc(12px + 1.5vmin);
+animation:fadeIn 1s both;
+position:relative
+}
+
+@keyframes fadeIn {
+from {
+opacity:0;
+transform:translateY(20px)
+}
+
+to {
+opacity:1;
+transform:translateY(0)
+}
+}
+
+.share {
+padding:10px 24px;
+font-size:16px;
+font-weight:600;
+color:var(--bg-page);
+background-color:var(--accent);
+border:none;
+border-radius:var(--radius);
+cursor:pointer;
+box-shadow:0 0 8px #76c00066;
+transition:background-color var(--transition),transform var(--transition),box-shadow var(--transition);
+margin-top:16px
+}
+
+.share:hover {
+background-color:var(--accent-dark);
+box-shadow:0 0 12px #76c00099;
+transform:scale(1.03)
+}

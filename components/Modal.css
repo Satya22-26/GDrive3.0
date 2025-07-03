@@ -1,0 +1,139 @@
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer {
+  width: 620px;
+  height: 340px;
+  border-radius: 18px;
+  background-color: #0d111a; /* modern dark */
+  box-shadow: 0 0 30px rgba(3, 20, 14, 0.1), 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+  text-align: center;
+  color: #d8f7ff;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #aefeff;
+}
+
+.titleCloseBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.titleCloseBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #aefeff;
+}
+
+.modalContainer .body {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.9rem;
+  text-align: center;
+  color: #c0e9ff;
+}
+
+.modalContainer .footer {
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+}
+
+.modalContainer .footer button {
+  width: 130px;
+  height: 42px;
+  border: none;
+  background-color: #aefeff;
+  color: #0d111a;
+  border-radius: 12px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.modalContainer .footer button:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+#cancelBtn {
+  background-color: #ff4040;
+  color: white;
+}
+
+#cancelBtn:hover {
+  background-color: #b22222;
+}
+
+.address {
+  display: block;
+  margin: 15px auto;
+  height: 40px;
+  width: 370px;
+  padding: 5px 12px;
+  border-radius: 9px;
+  border: 1px solid #aefeff;
+  text-align: center;
+  font-size: 16px;
+  background-color: #13202e;
+  color: #c6eaff;
+}
+
+input[type="text"]:focus {
+  background-color: #1d2e3f;
+  border: 1px solid #70f3ff;
+  outline: none;
+  color: white;
+}
+#myForm {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px; /* reduced from 20px */
+  margin-bottom:5px;
+}
+
+#selectNumber {
+  width: 300px;           /* reduced width */
+  height: 38px;           /* reduced height */
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #70f3ff;
+  background-color: #13202e;
+  color: #c5eaff;
+  font-size: 14px;
+  font-family: 'Segoe UI', 'Inter', sans-serif;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='7' viewBox='0 0 10 7' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0l5 7 5-7z' fill='%23c5eaff'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 10px 7px;
+  cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#selectNumber:focus {
+  outline: none;
+  border-color: #aefeff;
+  box-shadow: 0 0 5px rgba(112, 243, 255, 0.25);
+}
+
